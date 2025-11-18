@@ -2,6 +2,42 @@
  * Course: Arduino Object Oriented Programming Oop
  * Platform: Arduino
  * Author: Ashraf S A AlMadhoun
+ * 
+ * Description:
+ * This code demonstrates the core concepts taught in the "Arduino Object Oriented Programming Oop" course.
+ * It provides a practical implementation that students can study, modify, and
+ * use as a foundation for their own projects.
+ * 
+ * Learning Objectives:
+ * - Understand the fundamental principles covered in this course
+ * - Practice implementing the concepts with real code
+ * - Build a working example that can be extended
+ * 
+ * Hardware Requirements:
+ * - Development board (Arduino)
+ * - Components as specified in CIRCUIT.md
+ * - USB cable for programming
+ * 
+ * Pin Connections:
+ * Refer to CIRCUIT.md for detailed wiring diagrams and pin assignments.
+ * 
+ * Usage:
+ * 1. Review the code structure and comments
+ * 2. Connect hardware according to CIRCUIT.md
+ * 3. Upload code to your development board
+ * 4. Monitor serial output for debugging
+ * 
+ * Course Link: https://www.udemy.com/course/arduino-object-oriented-programming-oop/
+ * Repository: https://github.com/engasm89/arduino-object-oriented-programming-oop
+ * 
+ * Copyright (c) 2025 Ashraf S A AlMadhoun
+ * Licensed under MIT License
+ */
+
+/*
+ * Course: Arduino Object Oriented Programming Oop
+ * Platform: Arduino
+ * Author: Ashraf S A AlMadhoun
  * Purpose: Auto-generated metadata block to document the learning goals.
  * Notes: Auto-generated metadata block (2025-11-18)
  */
@@ -34,14 +70,14 @@ void sensor_print(Sensor *self) { // Begin print implementation
   printf("%s=%d\n", self->name, self->value); // Print name and value
 } // End print
 
-// Entry point demonstrating OOP style in C
+// Program entry point point demonstrating OOP style in C
 // Main routine: orchestrates the arduino object oriented programming oop scenario
-int main(void) { // Begin main function
+int main(void) { // Main function implementation function
   Sensor temp = {"Temp", 25, sensor_read, sensor_print}; // Initialize sensor instance
   for (int i = 0; i < 5; ++i) { // Loop for multiple reads
     temp.read(&temp); // Call read method via function pointer
     temp.print(&temp); // Call print method via function pointer
   } // End loop
-  return 0; // Exit success
-} // End main
+  return 0; // Exit successfully
+} // End of main function
 

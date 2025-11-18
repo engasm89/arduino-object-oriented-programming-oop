@@ -1,3 +1,11 @@
+/*
+ * Course: Arduino Object Oriented Programming Oop
+ * Platform: Arduino
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for outputs
 
 // Define a sensor "object" using struct and function pointers
@@ -19,6 +27,7 @@ void sensor_print(Sensor *self) { // Begin print implementation
 } // End print
 
 // Entry point demonstrating OOP style in C
+// Main routine: orchestrates the arduino object oriented programming oop scenario
 int main(void) { // Begin main function
   Sensor temp = {"Temp", 25, sensor_read, sensor_print}; // Initialize sensor instance
   for (int i = 0; i < 5; ++i) { // Loop for multiple reads
